@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Portfolio</title>
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="position-relative">
+
+    <header>
+        <i class="fa-solid fa-bars position-fixed text-white menu" id="nav-icon"></i>
+        <nav class="nav  text-white" id="nav-container">
+            <div class="container-fluid px-0  ">
+                <div class="nav-top p-3 d-flex justify-content-between align-items-center">
+                    <h5>Start Bootstrap</h5>
+                    <i class="fa-solid fa-xmark close" id="close"></i>
+                </div>
+                <div class="nav-links px-3">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <i class="fa-solid fa-chevron-up to-top" id="scrollIcon"></i>
+        <section id="home" >
+            <div class="home container-fluid py-5  d-flex justify-content-center align-items-center">
+                <div class="home_content">
+                    <h1>Stylish Portfolio</h1>
+                    <p class="fst-italic">A Free Bootstrap Theme by Start Bootstrap</p>
+                    <a href="#about" class="btn btn-primary mt-5 py-3 px-4 ">Find Out More</a>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <div class="container py-5 my-4  text-center">
+                <h2 class=" px-2 pt-5 fw-bold about-text">Stylish Portfolio is the perfect theme for your next project!</h2>
+                <p class="text-muted fs-5 fw-lighter px-3">This theme features a flexible, UX friendly sidebar menu and stock photos from our friends at <a href="#">Unsplash</a> !</p>
+                <a href="#services" class="btn btn-dark my-4 py-3 px-4 dark">What We Offer</a>
+            </div>
+
+        </section>
+        <section id="services" class="services text-center py-5">
+            <h6 class="text-warning pt-5">SERVICES</h6>
+            <h2 class=" fw-bold text-white mb-5">What We Offer</h2>
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                    <div class="col">
+                        <div class="col-content ">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <h4>Responsive</h4>
+                            <p >Look great on any screen size!</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="col-content">
+                            <i class="fa-solid fa-pencil"></i>
+                            <h4>Redesigned</h4>
+                            <p>Freshly redesigned for Bootstrap 5.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="col-content">
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <h4>Favorited</h4>
+                            <p>Millions of users 🤍  Start Bootstrap!</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="col-content">
+                            <i class="fa-solid fa-question"></i>
+                            <h4>Question</h4>
+                            <p>I mustache you a question...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="welcome-section">
+            <div class="container h-100 d-flex justify-content-center align-items-center ">
+                <div class="welcome text-center ">
+                    <h2>Welcome to <em>your</em> next website!</h2>
+                    <button class=" btn btn-primary my-5 py-3 px-4 ">Download Now!</button>
+                </div>
+            </div>
+
+        </section>
+        <section id="portfolio" class="portfolio text-white py-5">
+
+            <div class="heading text-center">
+                <h6 class="text-warning pt-5">PORTFOLIO</h6>
+                <h2 class=" fw-bold text-dark mb-5">Recent Projects</h2>
+            </div>
+            <div class="container px-4 px-lg-5">
+
+                <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 gx-0">
+                    <div class="col ">
+                        <div class="col-content mx-auto position-relative ">
+                            <img src="./images/portfolio-1.jpg" class="img-fluid" alt="">
+                            <div class="content position-absolute">
+                                <h2 class="fs-5">Stationary</h2>
+                                <p>A yellow pencil with envelopes on a clean, blue backdrop!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="col-content position-relative">
+                            <img src="./images/portfolio-2.jpg" class="img-fluid" alt="">
+                            <div class="content position-absolute">
+                                <h2 class="fs-5">Ice Cream</h2>
+                                <p>A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="col-content position-relative">
+                            <img src="./images/portfolio-3.jpg" class="img-fluid" alt="">
+                                <div class="content position-absolute">
+                                <h2 class="fs-5">Strawberries</h2>
+                                <p>Strawberries are such a tasty snack, especially with a little sugar on top!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="col-content position-relative">
+                            <img src="./images/bg-callout.jpg" class="img-fluid" alt="">
+                            <div class="content position-absolute">
+                                <h2 class="fs-5">Workspace</h2>
+                                <p>A yellow workspace with some scissors, pencils, and other objects.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="buttons-sec py-5 text-center">
+            <div class="container">
+                <h2 class="text-white mt-5 py-4 px-2 fw-bold">The buttons are impossible to resist...</h2>
+                <button class="btn btn-light py-3 px-4 mb-5 light">Click Me!</button>
+                <button class="btn btn-dark py-3 px-4 ms-4 mb-5 dark">Look at Me!</button>
+            </div>
+        </section>
+        <section class="map-sec">
+            <div class="container-fluid px-0">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2717.758394488633!2d31.1988161!3d30.4753812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7df6741b14b8d%3A0x27f5bbb9d7b1e3e3!2zQ3JlYXRpdmEgQmFuaGEgLSDZhdix2YPYsiDZhdi12LEg2KfZhNix2YLZhdmK2Kkg2YHYsdi5INio2YbZh9in!5e1!3m2!1sar!2seg!4v1754346500385!5m2!1sar!2seg" width="100%" height="450" style="border:0;" allowfullscreen="yes" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+    <footer class="py-4" id="contact">
+        <div class="icons d-flex justify-content-center gap-3 py-4">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-github"></i>
+        </div>
+        <p class="text-center text-muted end-p">Copyright © Your Website 2023</p>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
