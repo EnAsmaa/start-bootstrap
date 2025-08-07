@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Bootstrap</title>
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg py-3 navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand fs-4 w-25  text-primary text-center logo" href="#">Start Bootstrap</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 w-50 justify-content-center gap-2">
+                    <li class="nav-item">
+                    <a class="nav-link active " aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link " href="./projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link " href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="contact" class="my-5">
+            <div class="container">
+                <div class="row col-lg-9 col-10 mx-auto text-center py-5 ">
+                    <i class="fa-solid fa-envelope text-light fs-4 d-flex align-items-center justify-content-center mx-auto"></i>
+                    <h1>Get in touch</h1>
+                    <p class="text-muted">Let's work together!</p>
+
+                    <form class="col-lg-7 col-11 mx-auto mt-4">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="fullname" required>
+                            <label for="floatingInput">Full name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingEmail" placeholder="email Address" required>
+                            <label for="floatingEmail">Email Address</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingPhone" placeholder="Phone Number" required>
+                            <label for="floatingPhone">Phone Number</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                            <label for="floatingTextarea">Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary fs-5 py-2 my-2 w-100">Submit</button>
+                    </form>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container py-4 pt-lg-4 text-center  d-lg-flex  justify-content-between align-items-center">
+            <p>Copyright © Your Website 2023</p>
+            <div class="contacts-links">
+                <ul class="d-flex gap-3 align-items-center justify-content-center">
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

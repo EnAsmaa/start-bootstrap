@@ -3,167 +3,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stylish Portfolio</title>
+    <title>Start Bootstrap</title>
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body class="position-relative">
-
+<body>
     <header>
-        <i class="fa-solid fa-bars position-fixed text-white menu" id="nav-icon"></i>
-        <nav class="nav  text-white" id="nav-container">
-            <div class="container-fluid px-0  ">
-                <div class="nav-top p-3 d-flex justify-content-between align-items-center">
-                    <h5>Start Bootstrap</h5>
-                    <i class="fa-solid fa-xmark close" id="close"></i>
-                </div>
-                <div class="nav-links px-3">
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
+        <nav class="navbar navbar-expand-lg py-3 navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-4 w-25  text-primary text-center logo" href="#">Start Bootstrap</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 w-50 justify-content-center gap-2">
+                <li class="nav-item">
+                <a class="nav-link active " aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="./index.html">Resume</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link " href="./projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link " href="./contact.html">Contact</a>
+                </li>
+            </ul>
             </div>
+        </div>
         </nav>
     </header>
     <main>
-        <i class="fa-solid fa-chevron-up to-top" id="scrollIcon"></i>
-        <section id="home" >
-            <div class="home container-fluid py-5  d-flex justify-content-center align-items-center">
-                <div class="home_content">
-                    <h1>Stylish Portfolio</h1>
-                    <p class="fst-italic">A Free Bootstrap Theme by Start Bootstrap</p>
-                    <a href="#about" class="btn btn-primary mt-5 py-3 px-4 ">Find Out More</a>
-                </div>
-            </div>
-        </section>
-        <section id="about">
-            <div class="container py-5 my-4  text-center">
-                <h2 class=" px-2 pt-5 fw-bold about-text">Stylish Portfolio is the perfect theme for your next project!</h2>
-                <p class="text-muted fs-5 fw-lighter px-3">This theme features a flexible, UX friendly sidebar menu and stock photos from our friends at <a href="#">Unsplash</a> !</p>
-                <a href="#services" class="btn btn-dark my-4 py-3 px-4 dark">What We Offer</a>
-            </div>
-
-        </section>
-        <section id="services" class="services text-center py-5">
-            <h6 class="text-warning pt-5">SERVICES</h6>
-            <h2 class=" fw-bold text-white mb-5">What We Offer</h2>
-            <div class="container">
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-                    <div class="col">
-                        <div class="col-content ">
-                            <i class="fa-solid fa-mobile-screen-button"></i>
-                            <h4>Responsive</h4>
-                            <p >Look great on any screen size!</p>
+        <section id="home">
+            <div class="container py-5">
+                <h1 class=" text-center mb-4 ">Resume</h1>
+                <div class="cards-container row mx-auto">
+                    <div class="row row-cols-1 col-lg-9 gap-5 mx-auto">
+                        <div class="cards-heading d-flex justify-content-between mb-0 align-items-center ">
+                            <h2 class="text-primary fs-2">Experience</h2>
+                            <button class="btn btn-primary py-3"><i class="fa-solid fa-download"></i> Download Resume</button>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="col-content">
-                            <i class="fa-solid fa-pencil"></i>
-                            <h4>Redesigned</h4>
-                            <p>Freshly redesigned for Bootstrap 5.</p>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="col-content">
-                            <i class="fa-solid fa-thumbs-up"></i>
-                            <h4>Favorited</h4>
-                            <p>Millions of users 🤍  Start Bootstrap!</p>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="col-content">
-                            <i class="fa-solid fa-question"></i>
-                            <h4>Question</h4>
-                            <p>I mustache you a question...</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="welcome-section">
-            <div class="container h-100 d-flex justify-content-center align-items-center ">
-                <div class="welcome text-center ">
-                    <h2>Welcome to <em>your</em> next website!</h2>
-                    <button class=" btn btn-primary my-5 py-3 px-4 ">Download Now!</button>
-                </div>
-            </div>
-
-        </section>
-        <section id="portfolio" class="portfolio text-white py-5">
-
-            <div class="heading text-center">
-                <h6 class="text-warning pt-5">PORTFOLIO</h6>
-                <h2 class=" fw-bold text-dark mb-5">Recent Projects</h2>
-            </div>
-            <div class="container px-4 px-lg-5">
-
-                <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 gx-0">
-                    <div class="col ">
-                        <div class="col-content mx-auto position-relative ">
-                            <img src="./images/portfolio-1.jpg" class="img-fluid" alt="">
-                            <div class="content position-absolute">
-                                <h2 class="fs-5">Stationary</h2>
-                                <p>A yellow pencil with envelopes on a clean, blue backdrop!</p>
+                        <div class="card shadow border-0 row mx-auto d-flex flex-lg-row  mt-0 py-5 px-4 gap-4 justify-content-between ">
+                            <div class="card-left px-4 ms-lg-4 me-auto col-md-12 justify-content-center d-flex col-lg-3 ">
+                                <div>
+                                    <h6 class="text-primary pt-4">2017 - 2019</h6>
+                                    <h6 class="text-dark">Web Developer</h6>
+                                    <p class="text-muted pb-4">Stark Industries Los Angeles, CA</p>
+                                </div>
+                                
+                            </div>
+                            <div class="card-bottom d-flex align-items-center col-md-12 col-lg-8">
+                                <p class="card-text ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque sit dolore tempore sunt. Officiis quia perferendis nisi repudiandae ab, soluta labore exercitationem aspernatur consequuntur temporibus neque autem saepe? Quam laudantium dolores perferendis in dolore exercitationem?</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="col-content position-relative">
-                            <img src="./images/portfolio-2.jpg" class="img-fluid" alt="">
-                            <div class="content position-absolute">
-                                <h2 class="fs-5">Ice Cream</h2>
-                                <p>A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
+                        <div class="card shadow border-0 row mx-auto d-flex flex-lg-row  mt-0 py-5 px-4 gap-4 justify-content-between ">
+                            <div class="card-left px-4 ms-lg-4 me-auto col-md-12 justify-content-center d-flex col-lg-3 ">
+                                <div>
+                                    <h6 class="text-primary pt-4">2017 - 2019</h6>
+                                    <h6 class="text-dark">SEM Specialist</h6>
+                                    <p class="text-muted pb-4">Wayne Enterprises Gotham City, NY</p>
+                                </div>
+                                
+                            </div>
+                            <div class="card-bottom d-flex align-items-center col-md-12 col-lg-8">
+                                <p class="card-text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laudantium, voluptatem quis repellendus eaque sit animi illo ipsam amet officiis corporis sed aliquam non voluptate corrupti excepturi maxime porro fuga.</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="col-content position-relative">
-                            <img src="./images/portfolio-3.jpg" class="img-fluid" alt="">
-                                <div class="content position-absolute">
-                                <h2 class="fs-5">Strawberries</h2>
-                                <p>Strawberries are such a tasty snack, especially with a little sugar on top!</p>
+                        <div class="cards-heading  my-0 ">
+                            <h2 class="text-danger fs-2 my-0">Education</h2>
+                        </div>
+                        <div class="card shadow border-0 row mx-auto d-flex flex-lg-row  mt-0 py-5 px-4 gap-4 justify-content-between ">
+                            <div class="card-left px-4 ms-lg-4 me-auto col-md-12 justify-content-center d-flex col-lg-3 ">
+                                <div>
+                                    <h6 class="text-danger pt-4">2015 - 2017</h6>
+                                    <h6 class="text-dark">Barnett College</h6>
+                                    <p class="text-muted pb-4">Fairfield, NY Master's Web Development</p>
+                                </div>
+                                
+                            </div>
+                            <div class="card-bottom d-flex align-items-center col-md-12 col-lg-8">
+                                <p class="card-text ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque sit dolore tempore sunt. Officiis quia perferendis nisi repudiandae ab, soluta labore exercitationem aspernatur consequuntur temporibus neque autem saepe? Quam laudantium dolores perferendis in dolore exercitationem?</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="col-content position-relative">
-                            <img src="./images/bg-callout.jpg" class="img-fluid" alt="">
-                            <div class="content position-absolute">
-                                <h2 class="fs-5">Workspace</h2>
-                                <p>A yellow workspace with some scissors, pencils, and other objects.</p>
+                        <div class="card shadow border-0 row mx-auto d-flex flex-lg-row  mt-0 py-5 px-4 gap-4 justify-content-between ">
+                            <div class="card-left px-4 ms-lg-4 me-auto col-md-12 justify-content-center d-flex col-lg-3 ">
+                                <div>
+                                    <h6 class="text-danger pt-4">2011 - 2015</h6>
+                                    <h6 class="text-dark">ULA</h6>
+                                    <p class="text-muted pb-4">Los Angeles, CA Undergraduate Computer Science</p>
+                                </div>
+                                
+                            </div>
+                            <div class="card-bottom d-flex align-items-center col-md-12 col-lg-8">
+                                <p class="card-text ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque sit dolore tempore sunt. Officiis quia perferendis nisi repudiandae ab, soluta labore exercitationem aspernatur consequuntur temporibus neque autem saepe? Quam laudantium dolores perferendis in dolore exercitationem?</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="buttons-sec py-5 text-center">
-            <div class="container">
-                <h2 class="text-white mt-5 py-4 px-2 fw-bold">The buttons are impossible to resist...</h2>
-                <button class="btn btn-light py-3 px-4 mb-5 light">Click Me!</button>
-                <button class="btn btn-dark py-3 px-4 ms-4 mb-5 dark">Look at Me!</button>
-            </div>
-        </section>
-        <section class="map-sec">
-            <div class="container-fluid px-0">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2717.758394488633!2d31.1988161!3d30.4753812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7df6741b14b8d%3A0x27f5bbb9d7b1e3e3!2zQ3JlYXRpdmEgQmFuaGEgLSDZhdix2YPYsiDZhdi12LEg2KfZhNix2YLZhdmK2Kkg2YHYsdi5INio2YbZh9in!5e1!3m2!1sar!2seg!4v1754346500385!5m2!1sar!2seg" width="100%" height="450" style="border:0;" allowfullscreen="yes" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="skills my-5 ">
+                    <div class="container ">
+                        <div class="row border-0 col-lg-9 pb-5 px-lg-4 pt-lg-3  mx-auto shadow g-4">
+                            <div class="skills-heading col-10 col-md-12 mx-auto d-flex justify-content-start gap-3 mb-0 align-items-center ">
+                                <i class="fa-solid fa-screwdriver-wrench d-flex justify-content-center align-items-center text-light"></i>
+                                <h2>Professional Skills</h2>
+                            </div>
+                            <div class="col-10 col-md-4 mx-auto  ">
+                                <div class="col-text skill">
+                                    <p>SEO/SEM Marketing</p>
+                                </div>
+                            </div>
+                            <div class="col-10  col-md-4 mx-auto ">
+                                <div class="col-text skill">
+                                    <p>Statistical Analysis</p>
+                                </div>
+                                
+                            </div>
+                            <div class=" col-10 col-md-4 mx-auto ">
+                                <div class="col-text skill">
+                                    <p>Web Development</p>
+                                </div>
+                                
+                            </div>
+                            <div class="col-10  col-md-4 mx-auto ">
+                                <div class="col-text skill">
+                                    <p>Network Security</p>
+                                </div>
+                                
+                            </div>
+                            <div class=" col-10 col-md-4 mx-auto ">
+                                <div class="col-text skill">
+                                    <p>Adobe Software Suite</p>
+                                </div>
+                        
+                            </div>
+                            <div class="col-10  col-md-4 mx-auto ">
+                                <div class="col-text skill">
+                                    <p>User Interface Design</p>
+                                </div>
+                                
+                            </div>
+                            <div class="skills-heading col-10 col-md-12 mx-auto d-flex justify-content-start gap-3 mb-0 mt-5 align-items-center ">
+                                <i class="fa-solid fa-language d-flex justify-content-center align-items-center text-light"></i>
+                                <h2>Languages</h2>
+                            </div>
+                            <div class="col-10 col-md-4 mx-auto  ">
+                                <div class="col-text skill">
+                                    <p>HTML</p>
+                                </div>
+                            </div>
+                            <div class="col-10  col-md-4 mx-auto ">
+                                <div class="col-text skill">
+                                    <p>CSS</p>
+                                </div>
+                                
+                            </div>
+                            <div class=" col-10 col-md-4 mx-auto ">
+                                <div class="col-text skill">
+                                    <p>JavaScript</p>
+                                </div>
+                                
+                            </div>
+                            <div class="col-10  col-md-4 mx-auto ">
+                                <div class="col-text skill">
+                                    <p>Python</p>
+                                </div>
+                                
+                            </div>
+                            <div class=" col-10 col-md-4 mx-auto ">
+                                <div class="col-text skill">
+                                    <p>Ruby</p>
+                                </div>
+                        
+                            </div>
+                            <div class="col-10  col-md-4 mx-auto ">
+                                <div class="col-text skill">
+                                    <p>Node.js</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </section>
     </main>
-    <footer class="py-4" id="contact">
-        <div class="icons d-flex justify-content-center gap-3 py-4">
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-github"></i>
+    <footer>
+        <div class="container py-4 pt-lg-4 text-center  d-lg-flex  justify-content-between align-items-center">
+            <p>Copyright © Your Website 2023</p>
+            <div class="contacts-links">
+                <ul class="d-flex gap-3 align-items-center justify-content-center">
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
         </div>
-        <p class="text-center text-muted end-p">Copyright © Your Website 2023</p>
     </footer>
-
-    <script src="./js/main.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
